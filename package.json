@@ -4,24 +4,31 @@
   "description": "API Ocicial do  Teemprego",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "dev": "nodemon  -q server "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "module-alias": "^2.2.2"
+    "module-alias": "^2.2.2",
+    "mongoose": "^5.7.11",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.4"
   },
   "_moduleAliases": {
     "@": "src",
     "@app": "src/app.js",
     "@config": "src/config",
+    "@helpers": "src/helpers",
+    "@service": "src/service",
+    "@models": "src/models",
     "@controllers": "src/controllers"
   }
 }
